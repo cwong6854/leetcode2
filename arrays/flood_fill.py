@@ -11,15 +11,20 @@ class Solution:
         image[sr][sc] = color
         while queue:
             sr, sc = queue.popleft()
-            print(sr, sc)
-            print(visited)
             if (sr, sc) in visited:
                 continue
+            visited.add((sr,sc))
             for a, b in [(sr + 1, sc), (sr, sc - 1), (sr-1, sc), (sr, sc+1)]:
                 if a >= 0 and a < len(image) and b >= 0 and b < len(image[0]):  
                     if image[a][b] == start_color:
                         image[a][b] = color
                         queue.append((a,b))
-                        visited.add((a,b))
 
         return image
+if __name__ == "__main__":
+    image = [[1,1,1],[1,1,0],[1,0,1]]
+    r = 1
+    c = 1
+    color = 2
+    w = Solution()
+    print(w.floodFill(image, r, c, color))
