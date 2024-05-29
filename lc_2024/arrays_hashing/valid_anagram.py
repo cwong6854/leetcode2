@@ -36,10 +36,10 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
 
 # Complexity
 # Time complexity:
-# O(n) because we have 2 For Loops size N 
+# O(n) because we have 2 For Loops size N -> O(2*N) -> O(N)
 
 # Space complexity:
-# Provide an analysis of the space complexity of your solution.
+# O(26) -> O(1) -> FIXED
 
 # ADD CODE HERE
 class Solution(object):
