@@ -1,11 +1,8 @@
 """
-Author: [Your Name]
-Date: [Today's Date]
-Purpose: [Brief description of the purpose of this script]
 
-This template includes predefined sections for Intuition, Approach, Complexity, and Code.
+ADD DESCRIPTION HERE
+
 """
-
 # Intuition
 # Describe your initial thoughts on how to solve this problem.
 
