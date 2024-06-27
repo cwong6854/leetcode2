@@ -17,6 +17,14 @@ class Solution(object):
         # then check if is numeric as well
         # create new string from s
         # REMOVE ALL non-alphanumeric chars
+
+        # Time complexity:
+        # O(2 * n) -> O(n): iterate through length of s twice
+
+        # Space complexity:
+        # O(n) at most with newS
+
+        # COULD IMPROVE BY INDEXING LEFT AND RIGHT with just s, no need for newS
         newS = ""
         for char in s:
             # check if char is printable ASCII characters
