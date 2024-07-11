@@ -11,6 +11,9 @@ class Solution(object):
         # if there's profit, store that profit and compare with the maximum profit
         # CONDITION TO MOVE INDEX FOR BUY PRICE
         # ---> if buy price is less than sell price
+
+        # Time Complexity: O(n)
+        # Space Complexity: O(1)
         res, b = 0, 0
         for i in range(len(prices)): # O(n)
             if b == i:
