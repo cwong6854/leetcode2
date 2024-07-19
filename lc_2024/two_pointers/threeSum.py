@@ -13,6 +13,12 @@ class Solution(object):
         # for loop -> while we're on element, use left and right pointers
         # if left index and left neighbor are same, keep incrementing left
 
+        # Time Complexity: 
+        # Sorted -> O(n) + Find three sum combination, while skipping duplicates -> O(log N)
+        # -> O(n * log n)
+
+        # Space Complexity:
+        # O(1) or O(n) depending on library
         nums = sorted(nums) # O(n)
         res = []
         
@@ -33,7 +39,7 @@ class Solution(object):
                     while nums[l] == nums[l - 1] and l < r: # check left neighbor for l and l cannot pass r for index range
                         l += 1
         return res
-if __name__ == "__main__":
+if __name__ == "__main__": 
     solution = Solution().threeSum
     assert(solution([-1,0,1,2,-1,-4])==[[-1,-1,2],[-1,0,1]])
     # Add your test cases here
