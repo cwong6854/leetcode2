@@ -1,0 +1,25 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "grinding leetcode",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwong6854/leetcode2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwong6854/leetcode2/issues"
+  },
+  "homepage": "https://github.com/cwong6854/leetcode2#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.8",
+    "babel-core": "^6.26.3",
+    "jest": "^29.7.0"
+  }
+}
